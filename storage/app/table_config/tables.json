@@ -6,29 +6,47 @@
     "recordsUserFilter": true,
     "userLevel": 1
   },
-  "student": {
-    "modelName": "Student",
+  "pins": {
+    "modelName": "pins",
+    "searchableColumnName": "pins",
+    "pageTitle": "pins",
+    "recordsUserFilter": false,
+    "userLevel": 1
+  },
+  "tables": {
+    "modelName": "tables",
     "searchableColumnName": "name",
-    "pageTitle": "Student",
-    "recordsUserFilter": true,
-    "userLevel": 2,
-    "imageColumns": ["photo"],
-    "fileColumns": ["file"],
-    "joins": {
-      "book": {
-        "foreignTable": "book",
-        "foreignColumn": "id",
-        "localColumn": "book",
-        "foreignTitleColumn": "title",
-        "condition": "="
-      },
-      "book2": {
-        "foreignTable": "book2",
-        "foreignColumn": "id",
-        "localColumn": "book2",
-        "foreignTitleColumn": "title",
-        "condition": "="
-      }
-    }
+    "pageTitle": "tables",
+    "recordsUserFilter": false,
+    "userLevel": 1
+  },
+  "category": {
+    "modelName": "category",
+    "searchableColumnName": "name",
+    "pageTitle": "category",
+    "recordsUserFilter": false,
+    "userLevel": 1
+  },
+  "foods": {
+    "modelName": "foods",
+    "searchableColumnName": "name",
+    "pageTitle": "foods",
+    "recordsUserFilter": false,
+    "userLevel": 1
+  },
+  "foods_option": {
+    "modelName": "foods_option",
+    "searchableColumnName": "name",
+    "pageTitle": "foods_option",
+    "recordsUserFilter": false,
+    "userLevel": 1
+  },
+  "order_draft": {
+    "modelName": "order_draft",
+    "searchableColumnName": "table_id",
+    "pageTitle": "order_draft",
+    "recordsUserFilter": false,
+    "userLevel": 1
   }
+
 }

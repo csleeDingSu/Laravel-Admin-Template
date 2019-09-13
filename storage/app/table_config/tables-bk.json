@@ -1,0 +1,41 @@
+{
+  "users": {
+    "modelName": "User",
+    "searchableColumnName": "name",
+    "pageTitle": "User",
+    "recordsUserFilter": true,
+    "userLevel": 1
+  },
+  "student": {
+    "modelName": "Student",
+    "searchableColumnName": "name",
+    "pageTitle": "Student",
+    "recordsUserFilter": true,
+    "userLevel": 2,
+    "imageColumns": ["photo"],
+    "fileColumns": ["file"],
+    "joins": {
+      "book": {
+        "foreignTable": "book",
+        "foreignColumn": "id",
+        "localColumn": "book",
+        "foreignTitleColumn": "title",
+        "condition": "="
+      },
+      "book2": {
+        "foreignTable": "book2",
+        "foreignColumn": "id",
+        "localColumn": "book2",
+        "foreignTitleColumn": "title",
+        "condition": "="
+      }
+    }
+  },
+  "pins": {
+    "modelName": "pins",
+    "searchableColumnName": "pins",
+    "pageTitle": "pins",
+    "recordsUserFilter": false,
+    "userLevel": 1
+  }
+}
